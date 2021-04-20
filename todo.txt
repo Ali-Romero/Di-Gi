@@ -2,7 +2,7 @@
     + 1) на assets(fonts, favicon и т.д)
     + 2) images (imagemin)
     + 3) font icon
-    3) javascript
+    + 3) javascript
 
 2. Сделать разные режимы запуска (dev, prod)
 3. Прикрутить сжатие файлов (uglify, cssmin, rename и т.д)
