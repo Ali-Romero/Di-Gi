@@ -1,4 +1,4 @@
-const { task, series } = require('gulp')
+const { task, series, parallel } = require('gulp')
 const sass = require('./tasks/sass')
 const pug = require('./tasks/pug')
 const server = require('./tasks/server')
@@ -20,10 +20,12 @@ logger()
 
 exports.default = series(
   'clean',
-  'sass',
-  'pug',
-  'images',
-  'icons',
-  'assets',
+  parallel(
+    'sass',
+    'pug',
+    'images',
+    'icons',
+    'assets'
+  ),
   'server'
 )
