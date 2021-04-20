@@ -3,9 +3,13 @@ const sass = require('gulp-sass')
 
 sass.compiler = require('node-sass')
 
+const config = {
+  includePaths: ['node_modules']
+}
+
 function build() {
   return src('source/sass/*.sass')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass(config).on('error', sass.logError))
     .pipe(dest('dest/css'))
 }
 

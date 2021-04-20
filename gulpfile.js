@@ -6,6 +6,7 @@ const clean = require('./tasks/clean')
 const images = require('./tasks/images')
 const icons = require('./tasks/icons')
 const assets = require('./tasks/assets')
+const js = require('./tasks/js')
 const logger = require('./tasks/logger')
 
 task('clean', clean)
@@ -14,6 +15,7 @@ task('pug', pug)
 task('images', images)
 task('icons', icons)
 task('assets', assets)
+task('js', js)
 task('server', server)
 
 logger()
@@ -25,7 +27,8 @@ exports.default = series(
     'pug',
     'images',
     'icons',
-    'assets'
+    'assets',
+    'js'
   ),
   'server'
 )
