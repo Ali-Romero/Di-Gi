@@ -9,6 +9,7 @@
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "node-sass": "^5.0.0"
