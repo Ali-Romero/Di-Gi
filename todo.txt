@@ -1,7 +1,7 @@
 1. Сделать task'и:
     + 1) на assets(fonts, favicon и т.д)
     + 2) images (imagemin)
-    3) font icon
+    + 3) font icon
     3) javascript
 
 2. Сделать разные режимы запуска (dev, prod)
