@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "A gulp-based frontend application builder",
   "scripts": {
-    "dev": "gulp"
+    "dev": "cross-env NODE_ENV=development gulp",
+    "prod": "cross-env NODE_ENV=production gulp"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
+    "cross-env": "^7.0.3",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-iconfont": "^11.0.0",
