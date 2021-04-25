@@ -1,20 +1,12 @@
-const { src, dest, watch } = require('gulp')
+const { src, dest } = require('gulp')
 const pug = require('gulp-pug')
 
 const config = {
-  pretty: true,
+  pretty: process.env.NODE_ENV === 'development',
 }
 
-function build() {
+module.exports = function() {
   return src('source/pages/*.pug')
     .pipe(pug(config))
     .pipe(dest('dest/'))
 }
-
-watch([
-  'source/pages/*.pug',
-  'source/layouts/*.pug',
-  'source/components/**/*.pug'
-], build)
-
-module.exports = build

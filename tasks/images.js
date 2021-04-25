@@ -1,14 +1,10 @@
-const { src, dest, watch } = require('gulp')
+const { src, dest } = require('gulp')
 const image = require('gulp-image');
 
 const config = {}
 
-function build() {
+module.exports = function() {
   return src('source/images/**/*.*')
     .pipe(image(config))
     .pipe(dest('dest/images'))
 }
-
-watch(['source/images/**/*.*'], build)
-
-module.exports = build

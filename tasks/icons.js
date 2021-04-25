@@ -1,4 +1,4 @@
-const { src, dest, watch } = require('gulp')
+const { src, dest } = require('gulp')
 const iconfont = require('gulp-iconfont')
 const iconfontCss = require('gulp-iconfont-css')
 
@@ -14,13 +14,9 @@ const configFont = {
   fontName: fontName
 }
 
-function build() {
+module.exports = function() {
   return src(['source/icons/*.svg'])
     .pipe(iconfontCss(configCss))
     .pipe(iconfont(configFont))
     .pipe(dest('dest/icons/'))
 }
-
-watch(['source/icons/*.svg'], build)
-
-module.exports = build

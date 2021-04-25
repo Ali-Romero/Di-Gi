@@ -7,7 +7,7 @@ const config = {
   notify: false
 }
 
-module.exports = function(done) { 
+module.exports = function(done) {
   browserSync.init(config)
 
   browserSync.watch('dest/').on('change', browserSync.reload)

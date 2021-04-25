@@ -1,10 +1,6 @@
-const { src, dest, watch } = require('gulp')
+const { src, dest } = require('gulp')
 
-function build() {
+module.exports = function() {
   return src('source/assets/**/*.*')
     .pipe(dest('dest/'))
 }
-
-watch(['source/assets/**/*.*'], build)
-
-module.exports = build

@@ -1,4 +1,4 @@
-const { src, dest, watch } = require('gulp')
+const { src, dest } = require('gulp')
 const include = require('gulp-include')
 const path = require('path')
 
@@ -9,12 +9,8 @@ const config = {
   ]
 }
 
-function build() {
+module.exports = function() {
   return src('source/js/*.js')
     .pipe(include(config))
     .pipe(dest('dest/js'))
 }
-
-watch(['source/js/*.js'], build)
-
-module.exports = build
