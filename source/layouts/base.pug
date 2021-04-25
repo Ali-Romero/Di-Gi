@@ -7,12 +7,12 @@ html(lang="ru")
 
     link(rel="icon" href="/favicon.ico" type="image/x-icon")
 
-    link(rel="stylesheet", href="/icons/icons.css")
-
     if production
+      link(rel="stylesheet", href="/icons/icons.min.css")
       link(rel="stylesheet", href="/css/reset.min.css")
       link(rel="stylesheet", href="/css/main.min.css")
     else
+      link(rel="stylesheet", href="/icons/icons.css")
       link(rel="stylesheet", href="/css/reset.css")
       link(rel="stylesheet", href="/css/main.css")
 
