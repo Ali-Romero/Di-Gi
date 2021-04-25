@@ -8,8 +8,13 @@ html(lang="ru")
     link(rel="icon" href="/favicon.ico" type="image/x-icon")
 
     link(rel="stylesheet", href="/icons/icons.css")
-    link(rel="stylesheet", href="/css/reset.css")
-    link(rel="stylesheet", href="/css/main.css")
+
+    if production
+      link(rel="stylesheet", href="/css/reset.min.css")
+      link(rel="stylesheet", href="/css/main.min.css")
+    else
+      link(rel="stylesheet", href="/css/reset.css")
+      link(rel="stylesheet", href="/css/main.css")
 
     block head
       title Meccano - frontend builder
@@ -18,4 +23,7 @@ html(lang="ru")
     block body
 
     block scripts
-      script(src="/js/main.js")
+      if production
+        script(src="/js/main.min.js")
+      else
+        script(src="/js/main.js")
