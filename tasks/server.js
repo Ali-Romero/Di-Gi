@@ -1,4 +1,5 @@
 const browserSync = require('browser-sync').create()
+const { watch } = require('gulp')
 
 const config = {
   server: {
@@ -10,7 +11,9 @@ const config = {
 module.exports = function(done) {
   browserSync.init(config)
 
-  browserSync.watch('dest/').on('change', browserSync.reload)
+  const watcher = watch(['dest/**/*.*'])
+
+  watcher.on('change', browserSync.reload)
 
   done()
 }
