@@ -1,12 +1,14 @@
 $(document).ready(function(){
    $('.js-slider').slick({
-      dots:true,
+      dots: true,
+      arrows: true,
+      infinite:false,
    })
 });
 
-$('.btn-link__info').click(function(event) {
-   $('.js-slider').slick('slickPrev');
-});
-$('.menu__btn').click(function(event) {
-   $('.js-slider').slick('slickNext');
-})
+// $('.arrow-prew').click(function(event) {
+//    $('.js-slider').slick('slickPrev');
+// });
+// $('.arrow-next').click(function(event) {
+//    $('.js-slider').slick('slickNext');
+// })

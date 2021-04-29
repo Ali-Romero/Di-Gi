@@ -13,25 +13,56 @@
     flex: 1
 
 .wrapper
-  
+  max-width: 1320px
+  margin: 0 auto
+  padding-right: 24px
+  padding-left: 24px
+  box-sizing: content-box
 
-.layout
-  height: 100px
-  display: flex
-  justify-content: space-between
-  background-color: $color-blue
+.button
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 0 16px
+  height: 50px
+  text-transform: uppercase
+  font-size: 18px
+  font-weight: 500
+  background-color: $color-white-light-1
+  color: $color-blue
+  border-radius: 3px
+  transition: all 0.2s
 
-.header
+  &--blue
+    background-color: $color-blue
+    color: $color-white-light-1
+
+  &--fluid
+    display: flex
+    width: 100%
 
 .logo
-  display: flex
-  align-items: center
-  margin-left: 61px
+  display: block
+
+  & img
+    display: block
+
+.header
+  background-color: $color-blue
+
+  &__menu
+    margin-right: 150px
+
+  &__flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 17px 0
+
 
 .menu
   display: flex
   align-items: center
-  margin-right: 150px
 
 .menu__btn
   width: 40px
@@ -56,84 +87,103 @@
   display: flex
   background-color: $color-blue
 
-.intro
-  display: flex
-  flex-direction: column
+.main-slider
+  background-image: url('/images/intro-image.jpg')
+  background-size: cover
 
-.slider
-  position: relative
-  display: flex
-  justify-content: center
-  align-items: center
+  &__inner
+    background-color: rgba(0, 0, 0, 0.5)
+    position: relative
+    z-index: 2
 
-.slider-background
-  width: 100%
+  &__button
+    width: 200px
+    margin: 0 auto
 
-.bg
+  &__title
+    max-width: 500px
+    margin: 0 auto 18px
+    font-size: 96px
+    line-height: 96px
+
+  &__description
+    max-width: 880px
+    margin: 0 auto 28px
+    font-size: 24px
+    line-height: 26px
+
+  &__item
+    padding: 107px 0 213px
+    text-align: center
+    color: $color-white
+
+.main-slider__arrrow
+  height: 140px
+  top: 0
+  right: 0
+  bottom: 0
+  margin: auto 0
+  display: block
   position: absolute
-  display: flex
-  justify-content: center
-  align-items: center
-  background: rgba(33, 33, 33, 0.5)
-  width: 100%
-  height: 100%
-
-.box-slider
-  display: flex
-  flex-direction: column
-  align-items: center
-
-
-.box-slider__slogan
-  margin-bottom: 18px
-  text-align: center
-  font-family: "RobotoRegular"
-  font-style: normal
-  font-weight: normal
-  font-size: 96px
-  line-height: 96px
-  color: $color-white
-
-.box-slider__desc
-  margin-bottom: 28px
-  text-align: center
-  font-family: "RobotoRegular"
-  font-style: normal
-  font-weight: normal
-  font-size: 24px
-  line-height: 26px
-  color: $color-white
-
-.btn-link
-  color: $color-white
-  display: flex
-  justify-content: center
-  align-items: center
-
-.slick-dots
-  display: flex
-  justify-content: center
-  align-items: center
-  
-
-.btn-link__info
-  width: 200px
-  height: 50px
-  border-radius: 3px
-  cursor: pointer
-  border-radius: 3px
-  font-family: "RobotoRegular"
-  background-color: $color-blue
-
-.btn-link__text
-  color: $color-white
-
-.slider__btn-arrow
-  color: $color-white
+  z-index: 900
 
 .arrow-prew
+  height: 70px
+  width: 70px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $color-blue
+  border-radius: 3px
+  transition: all 0.2s
+  margin-bottom: 1px
+  cursor: pointer
+
+  &:hover
+    background-color: $color-white
 
 .arrow-next
+  height: 70px
+  width: 70px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $color-blue
+  border-radius: 3px
+  transition: all 0.2s
+  margin-top: 1px
+  cursor: pointer
+
+  &:hover
+    background-color: $color-white
+
+.slick-disabled
+  opacity: 0.2
+  
+  background-color: blue
+
+.slick-prev
+  background-color: $color-blue
+  height: 70px
+  width: 70px
+  position: absolute
+  z-index: 3
+  top: -8px
+  right: 0
+  bottom: 0
+  margin: auto 0
+
+.slick-next
+  background-color: $color-blue
+  height: 70px
+  width: 70px
+  position: absolute
+  z-index: 3
+  bottom: 25%
+  right: 0
+  top: 25px
+  margin: auto 0
+
 
 .promo
   height: 192px
@@ -165,22 +215,4 @@
   font-family: "RobotoRegular"
   color: $color-white
 
-.promo__btn
-  display: flex
-
-.buy-button
-  margin-right: 150px
-  width: 200px
-  height: 50px
-  border-radius: 3px
-  cursor: pointer
-  border-radius: 3px
-  background-color: $color-white
-
-.buy-button__text
-  font-style: normal
-  font-weight: 500
-  font-size: 18px
-  line-height: 18px
-  color: $color-blue
 
