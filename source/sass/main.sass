@@ -2,7 +2,7 @@
 @import 'common/helpers'
 @font-face
   font-family: "RobotoRegular"
-  src : url("/fonts/RobotoRegular.otf")
+  src: url("/fonts/RobotoRegular.otf")
 
 .page
   display: flex
@@ -18,6 +18,14 @@
   padding-right: 24px
   padding-left: 24px
   box-sizing: content-box
+
+.wrapper-standart
+  max-width: 1138px
+  margin: 0 auto
+  padding-right: 151px
+  padding-left: 151px
+  box-sizing: content-box
+
 
 .button
   display: inline-flex
@@ -37,6 +45,10 @@
     background-color: $color-blue
     color: $color-white-light-1
 
+  &--white
+    background-color: $color-white-light-1
+    color: $color-blue
+
   &--fluid
     display: flex
     width: 100%
@@ -50,15 +62,11 @@
 .header
   background-color: $color-blue
 
-  &__menu
-    margin-right: 150px
-
   &__flex
     display: flex
     justify-content: space-between
     align-items: center
     padding: 17px 0
-
 
 .menu
   display: flex
@@ -117,85 +125,85 @@
     text-align: center
     color: $color-white
 
-.main-slider__arrrow
+.main-slider__arrrows
   height: 140px
   top: 0
   right: 0
   bottom: 0
   margin: auto 0
-  display: block
   position: absolute
   z-index: 900
 
-.arrow-prew
-  height: 70px
+.slick-disabled
+  background-color: rgba(187, 181, 181, 0.5)
+
+.arrow-img path
+  fill: $color-white-light-1
+
+.main-slider__prev
   width: 70px
+  height: 70px
   display: flex
   justify-content: center
   align-items: center
-  background-color: $color-blue
-  border-radius: 3px
-  transition: all 0.2s
-  margin-bottom: 1px
   cursor: pointer
+  background-color: $color-blue
 
-  &:hover
-    background-color: $color-white
-
-.arrow-next
-  height: 70px
+.main-slider__next
   width: 70px
+  height: 70px
   display: flex
   justify-content: center
   align-items: center
-  background-color: $color-blue
-  border-radius: 3px
-  transition: all 0.2s
-  margin-top: 1px
   cursor: pointer
-
-  &:hover
-    background-color: $color-white
+  background-color: $color-white-light-1
 
 .slick-disabled
-  opacity: 0.2
-  
-  background-color: blue
+  opacity: 0.3
 
-.slick-prev
-  background-color: $color-blue
-  height: 70px
-  width: 70px
+.main-slider__dots
   position: absolute
-  z-index: 3
-  top: -8px
   right: 0
   bottom: 0
+  top: 0
   margin: auto 0
+  height: 17px
+  transform: translateY(204px)
+  left: 0
 
-.slick-next
-  background-color: $color-blue
-  height: 70px
-  width: 70px
-  position: absolute
-  z-index: 3
-  bottom: 25%
-  right: 0
-  top: 25px
-  margin: auto 0
-
-
-.promo
-  height: 192px
+.slick-dots
   display: flex
-  justify-content: space-between
-  background-color: $color-blue
+  justify-content: center
   align-items: center
 
-.promo__info
-  display: flex
-  flex-direction: column
-  margin-left: 150px
+.slick-dots button
+  font-size: 0
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: $color-white
+  margin: 0px 10px
+
+.slick-dots li.slick-active button
+  background-color: transparent
+  border: 1px solid $color-white
+
+.promo
+  background-color: $color-blue
+
+  &__flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 57px 0
+
+  &__info
+    display: flex
+    flex-direction: column
+
+  &__but
+    display: flex
+    justify-content: center
 
 .promo__info-title
   margin-bottom: 4px
@@ -207,7 +215,7 @@
   color: $color-white
 
 .promo__info-text
-  font-family: Dosis
+
   font-style: normal
   font-weight: 300
   font-size: 16px
@@ -215,4 +223,223 @@
   font-family: "RobotoRegular"
   color: $color-white
 
+.content
 
+.content__wrapper
+  max-width: 1392px
+  margin: 0 auto
+  padding-right: 24px
+  padding-left: 24px
+  box-sizing: content-box
+  display: flex
+  justify-content: space-between
+
+.content__info
+  max-width: 516px
+
+
+.content__info-box
+  max-width: 393px
+  padding: 132px 0
+  display: flex
+  flex-direction: column
+
+
+.content__title
+  font-family: Roboto Condensed
+  color: $color-blue
+  font-style: normal
+  font-weight: normal
+  font-size: 48px
+  line-height: 56px
+  padding-top: 90px
+
+.content__discription
+  font-family: Roboto Condensed
+  max-width: 380px
+  font-size: 24px
+  line-height: 26px
+  font-style: normal
+  font-weight: normal
+  color: $color-dark
+
+
+.blue-line
+  width: 98px
+  height: 8px
+  margin: 32px 0
+  background-color: $color-blue
+
+.content__text
+  font-family: Roboto
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  color: #797979
+
+
+.pagination
+  max-width: 853px
+  margin: 0 auto
+  display: flex
+
+.pagination__list
+  padding-top: 79px
+  display: flex
+  margin: 0px -5px
+
+  &--bottom
+    padding: 0 0 16px 0
+
+
+.pagination__item
+  width: 233px
+  height: 274px
+  display: inline-flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 0px 5px
+  flex: 0 1 25%
+  border: 1px solid #F9F6E5
+  box-sizing: border-box
+
+  &:hover
+    border: 4px solid #2B4074
+
+.pagination__meta
+  display: flex
+  text-align: center
+  max-width: 200px
+  padding: 24px 0
+  font-family: Roboto Condensed
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 19px
+  letter-spacing: 2px
+  color: #4A4A4A
+  overflow: hidden
+  text-transform: uppercase
+
+.pagination__hidden
+  display: flex
+  flex-direction: column
+  align-items: center
+  display: none
+
+.pagination__hidden-text
+  text-align: center
+  font-family: Roboto
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 18px
+  color: #9B9B9B
+
+.pagination__hidden-link
+  cursor: pointer
+  padding-top: 20px
+  font-family: Roboto Condensed
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 19px
+  display: flex
+  text-align: center
+  letter-spacing: 2px
+  text-transform: uppercase
+  color: $color-blue
+
+.portfolio
+
+.portfolio__bg
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%)
+
+.portfolio__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 80px 0
+
+.portfolio__title
+  font-family: Roboto Condensed
+  font-style: normal
+  font-weight: normal
+  font-size: 48px
+  line-height: 56px
+  text-align: center
+  color: $color-white
+
+.portfolio__line
+  margin: 24px auto 0
+  width: 100px
+  height: 8px
+  background-color: $color-white
+
+.portfolio__work
+  max-width: 1138px
+  margin: 80px auto 0
+  display: flex
+
+
+
+.template
+  margin-right: 21px
+  &--mr
+    margin: 0
+
+.template__img
+
+.template__name
+  max-width: 263px
+  margin: 29px auto 0
+  font-family: Roboto Condensed
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 19px
+  text-align: center
+  letter-spacing: 2px
+  color: $color-blue
+
+.video-block
+.wrapper-standart
+.video-block__aside
+  padding: 80px 0
+  display: flex
+  justify-content: space-between
+
+.video-block__holder
+  display: flex
+  flex-direction: column
+.video-block__image
+
+.video-block__title
+  font-family: Roboto Condensed
+  font-style: normal
+  font-weight: normal
+  font-size: 48px
+  line-height: 56px
+  color: $color-dark
+  margin-bottom: 39px
+
+.video-block__line
+  width: 114px
+  height: 8px
+  margin-bottom: 39px
+  background-color: $color-blue
+
+.video-block__text
+  margin-bottom: 39px
+  font-family: Roboto
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  color: #9B9B9B
+  max-width: 584px
+
+.video-block__btn
+  width: 200px
