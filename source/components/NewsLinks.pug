@@ -1,0 +1,68 @@
+-
+  var links = [
+    {
+      href: '#',
+      img: '/images/phone.png',
+      width: '270px',
+      height: '431px',
+      subtitle: '3Д в брендинге',
+    },
+    {
+      href: '#',
+      img: '/images/unique.png',
+      width: '270px',
+      height: '167px',
+      subtitle: 'Уникальный дизайн',
+    },
+    {
+      href: '#',
+      img: '/images/context.png',
+      width: '269px',
+      height: '342px',
+      subtitle: 'Контекстная реклама',
+    },
+    {
+      href: '#',
+      img: '/images/outside.png',
+      width: '269px',
+      height: '342px',
+      subtitle: 'Взгляд со стороны',
+    },
+    {
+      href: '#',
+      img: '/images/graphics.png',
+      width: '269px',
+      height: '484px',
+      subtitle: 'Графика',
+    },
+    {
+      href: '#',
+      img: '/images/networks.png',
+      width: '269px',
+      height: '198px',
+      subtitle: 'Соц сети и их польза',
+    },
+    {
+      href: '#',
+      img: '/images/culture.png',
+      width: '268px',
+      height: '211px',
+      subtitle: 'Корпоративная культура',
+    },
+    {
+      href: '#',
+      img: '/images/exclusivity.png',
+      width: '269px',
+      height: '437px',
+      subtitle: 'Эксклюзивность',
+    },
+  ]
+.masonry
+  ul.masonry__links
+    - for (var i = 0; i < links.length; i++)
+      li.masonry__item
+        a(href=links[i].href).masonry__link
+          .masonry__img
+            img(src=links[i].img alt=links[i].subtitle width=links[i].width height=links[i].height).masonry__img
+          .masonry__subtitle
+            .masonry__subtitle-text= links[i].subtitle
