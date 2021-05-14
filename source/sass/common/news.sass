@@ -11,6 +11,7 @@
   &__title
     margin-top: 52px
     margin-bottom: 19px
+    color: $color-dark
 
   &__line
     width: 100px
@@ -97,3 +98,26 @@
     color: $color-dark
     letter-spacing: 2px
     background-color: $color-white
+
+@media (max-width: 320px)
+  .news
+    &__title
+      font-size: 24px
+      line-height: 38px
+      margin-top: 40px
+      margin-bottom: 20px
+
+    &__line
+      width: 50px
+      margin-bottom: 40px
+
+  .masonry
+    &__links
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      margin-bottom: 20px
+
+    &__item
+      margin-bottom: 20px

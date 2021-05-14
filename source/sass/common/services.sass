@@ -1,15 +1,18 @@
 .services
-  &__content
-    width: 393px
-
   &__inner
     display: flex
     justify-content: space-between
+
+  &__content
+    max-width: 393px
 
   &__title
     margin-top: 90px
     margin-bottom: 64px
     color: $color-blue
+    font-size: 48px
+    line-height: 56px
+    letter-spacing: 2px
 
   &__subtitle
     margin-bottom: 30px
@@ -87,6 +90,12 @@
     margin-bottom: 27px
 
   &__name,
+    font-size: 16px
+    line-height: 19px
+    font-family: "RobotoCondensed"
+    text-transform: uppercase
+    margin: 0 5px
+
   &__button
     font-size: 16px
     line-height: 19px
@@ -109,3 +118,46 @@
 
   &__button
     color: $color-blue
+
+@media (max-width: 320px)
+  .services
+    &__inner
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      text-align: center
+
+    &__content
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+
+    &__title
+      margin-top: 25px
+      margin-bottom: 20px
+      font-size: 24px
+      line-height: 28px
+      order: 1
+
+    &__subtitle
+      margin-bottom: 20px
+      font-size: 20px
+      line-height: 24px
+      order: 3
+
+    &__line
+      margin-bottom: 21px
+      order: 2
+
+    &__description
+      font-size: 15px
+      line-height: 17px
+      order: 4
+      margin-bottom: 40px
+
+    &__links
+      margin-bottom: 40px
+
+  .services-links
+    max-width: 213px

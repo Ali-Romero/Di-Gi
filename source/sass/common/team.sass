@@ -1,6 +1,6 @@
 .team
   &__aside
-    padding: 80px 0
+    margin: 80px 0
     display: flex
     justify-content: space-between
     flex-wrap: wrap
@@ -16,8 +16,6 @@
 
   &__title
     font-family: "RobotoCondensed"
-    font-style: normal
-    font-weight: normal
     font-size: 48px
     line-height: 56px
     color: $color-dark
@@ -29,9 +27,7 @@
 
   &__text
     margin-bottom: 39px
-    font-family: Roboto
-    font-style: normal
-    font-weight: normal
+    font-family: "RobotoRegular"
     font-size: 18px
     line-height: 24px
     color: #9B9B9B
@@ -39,3 +35,41 @@
 
   &__btn
     width: 200px
+
+
+@media (max-width: 320px)
+  .team
+    &__aside
+      margin: 20px 0
+      justify-content: center
+      align-items: center
+      text-align: center
+
+    &__image
+      max-width: 281px
+      max-height: 243px
+      margin-bottom: 40px
+
+    &__holder
+      align-items: center
+
+    &__title
+      font-size: 24px
+      line-height: 38px
+      margin-bottom: 20px
+
+    &__line
+      width: 45px
+      margin-bottom: 23px
+
+    &__text
+      margin-bottom: 84px
+      font-size: 16px
+      line-height: 18px
+
+    &__btn
+      margin-bottom: 40px
+
+.team-img
+  width: 281px
+  height: 243px

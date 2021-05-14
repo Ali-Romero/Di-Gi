@@ -5,27 +5,39 @@
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 57px 0
-
-  &__but
-    display: flex
-    justify-content: center
 
   &__info
     display: flex
     flex-direction: column
+    margin: 57px 0
 
   &__info-title
     margin-bottom: 4px
     font-weight: 500
     font-size: 24px
     line-height: 32px
-    font-style: normal
     color: $color-white
 
   &__info-text
-    font-style: normal
     font-weight: 300
     font-size: 16px
     line-height: 18px
     color: $color-white
+
+@media (max-width: 320px)
+  .promo
+    &__flex
+      justify-content: center
+      flex-direction: column
+      text-align: center
+
+    &__info
+      margin: 40px 0
+
+    &__info-title
+      margin-bottom: 10px
+      font-weight: 500
+      line-height: 24px
+
+    &__btn
+      margin-bottom: 40px

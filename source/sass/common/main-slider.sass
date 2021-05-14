@@ -12,12 +12,14 @@
   &__button
     width: 200px
     margin: 0 auto
+    margin-bottom: 213px
 
   &__title
     max-width: 500px
     margin: 0 auto 18px
     font-size: 96px
     line-height: 96px
+    text-transform: uppercase
 
   &__description
     max-width: 880px
@@ -26,7 +28,6 @@
     line-height: 26px
 
   &__item
-    padding: 107px 0 213px
     text-align: center
     color: $color-white
 
@@ -63,11 +64,11 @@
     position: absolute
     right: 0
     bottom: 0
-    top: 0
     margin: auto 0
     height: 17px
-    transform: translateY(204px)
     left: 0
+    margin-bottom: 78px
+    z-index: 2
 
 .slick-disabled
   background-color: rgba(187, 181, 181, 0.5)
@@ -89,3 +90,39 @@
 .main-slider__dots .slick-dots li.slick-active button
   background-color: transparent
   border: 1px solid $color-white
+
+.dark-line
+  display: none
+
+@media (max-width: 320px)
+  .main-slider
+    background-image: url('/images/slider-mb.jpg')
+
+    &__button
+      display: none
+
+    &__title
+      max-width: 230px
+      margin: 0 auto
+      margin-top: 36px
+      font-size: 28px
+      line-height: 28px
+      text-transform: uppercase
+
+    &__description
+      display: none
+
+    &__arrrows
+      display: none
+
+    &__dots
+      margin-bottom: 20px
+
+  .dark-line
+    max-width: 61px
+    height: 8px
+    background-color: $color-dark
+    margin: 0 auto
+    margin-top: 20px
+    margin-bottom: 65px
+    display: flex

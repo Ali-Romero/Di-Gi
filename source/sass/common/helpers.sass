@@ -29,6 +29,9 @@
   &--white
     background-color: $color-white
 
+  &--dark
+    background-color: $color-dark
+
 .button
   display: inline-flex
   align-items: center
@@ -54,3 +57,12 @@
   &--fluid
     display: flex
     width: 100%
+
+
+@media (max-width: 320px)
+  .wrapper
+    max-width: 320px
+    margin: 0 auto
+    padding-right: 10px
+    padding-left: 10px
+    box-sizing: content-box
