@@ -78,6 +78,8 @@
 
 .main-slider
   background-image: url('/images/intro-image.jpg')
+  background-repeat:no-repeat
+  background-position: center
   background-size: cover
 
   &__inner
@@ -222,7 +224,7 @@
     max-width: 1138px
     margin: 80px auto 0
     display: flex
-    flex-wrap: 
+    flex-wrap: wrap
 
 .template
   margin-right: 21px
@@ -247,6 +249,12 @@
     padding: 80px 0
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
+
+  &__image
+    max-width: 470px
+    max-height: 430px
+    object-fit: cover
 
   &__holder
     display: flex
@@ -555,10 +563,10 @@
   background-color: $color-blue
   display: flex
   justify-content: center
-  align-items: center
+  flex-direction: column
 
   &__logo
-    max-width: 230px
+    min-width: 230px
     margin: 0 auto
     display: flex
     justify-content: center
@@ -576,6 +584,7 @@
     margin-bottom: 80px
 
   &__social-list
+    max-width: 1141px
     display: flex
     text-align: center
     justify-content: center
@@ -585,17 +594,18 @@
 
   &__social-item
     border-right: 2px solid #7EBF84
+    width: 100%
 
     &:last-child
       border-right: none
 
   &__nav
     display: flex
-    justify-content: space-evenly
     margin-bottom: 80px
+    max-width: 1096px
+    justify-content: space-between
 
 .social-links
-  width: 283px
   height: 60px
   font-size: 34px
   line-height: 14px
