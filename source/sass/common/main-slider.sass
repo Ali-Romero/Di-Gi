@@ -1,0 +1,91 @@
+.main-slider
+  background-image: url('/images/intro-image.jpg')
+  background-repeat:no-repeat
+  background-position: center
+  background-size: cover
+
+  &__inner
+    background-color: rgba(0, 0, 0, 0.5)
+    position: relative
+    z-index: 2
+
+  &__button
+    width: 200px
+    margin: 0 auto
+
+  &__title
+    max-width: 500px
+    margin: 0 auto 18px
+    font-size: 96px
+    line-height: 96px
+
+  &__description
+    max-width: 880px
+    margin: 0 auto 28px
+    font-size: 24px
+    line-height: 26px
+
+  &__item
+    padding: 107px 0 213px
+    text-align: center
+    color: $color-white
+
+  &__arrrows
+    height: 140px
+    top: 0
+    right: 0
+    bottom: 0
+    margin: auto 0
+    position: absolute
+    z-index: 900
+
+  &__prev
+    width: 70px
+    height: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    background-color: $color-blue
+    color: $color-white-light-1
+
+  &__next
+    width: 70px
+    height: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    background-color: $color-white-light-1
+    color: #DADADA
+
+  &__dots
+    position: absolute
+    right: 0
+    bottom: 0
+    top: 0
+    margin: auto 0
+    height: 17px
+    transform: translateY(204px)
+    left: 0
+
+.slick-disabled
+  background-color: rgba(187, 181, 181, 0.5)
+  opacity: 0.3
+
+.main-slider__dots .slick-dots
+  display: flex
+  justify-content: center
+  align-items: center
+
+.main-slider__dots .slick-dots button
+  font-size: 0
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: $color-white
+  margin: 0px 10px
+
+.main-slider__dots .slick-dots li.slick-active button
+  background-color: transparent
+  border: 1px solid $color-white
