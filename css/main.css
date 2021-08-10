@@ -106,7 +106,7 @@
     background-color: #2B4074; }
 
 .main-slider {
-  background-image: url("/test-gulp/images/intro-image.jpg");
+  background-image: url("/Di-Gi/images/intro-image.jpg");
   background-position: center;
   background-size: cover; }
   .main-slider__inner {
@@ -192,7 +192,7 @@
 
 @media (max-width: 1440px) {
   .main-slider {
-    background-image: url("/test-gulp/images/slider-1024.jpg"); }
+    background-image: url("/Di-Gi/images/slider-1024.jpg"); }
     .main-slider__inner {
       padding-top: 101px; }
     .main-slider__title {
@@ -216,7 +216,7 @@
 
 @media (max-width: 1024px) {
   .main-slider {
-    background-image: url("/test-gulp/images/slider-770.jpg"); }
+    background-image: url("/Di-Gi/images/slider-770.jpg"); }
     .main-slider__inner {
       padding-top: 50px; }
     .main-slider__button {
@@ -239,7 +239,7 @@
 
 @media (max-width: 770px) {
   .main-slider {
-    background-image: url("/test-gulp/images/slider-640.jpg"); }
+    background-image: url("/Di-Gi/images/slider-640.jpg"); }
     .main-slider__title {
       margin-bottom: 7px; }
     .main-slider__line {
@@ -252,7 +252,7 @@
 
 @media (max-width: 640px) {
   .main-slider {
-    background-image: url("/test-gulp/images/slider-320.jpg"); }
+    background-image: url("/Di-Gi/images/slider-320.jpg"); }
     .main-slider__inner {
       padding-top: 36px; }
     .main-slider__button {
@@ -1184,15 +1184,15 @@
 
 @font-face {
   font-family: "RobotoRegular";
-  src: url("/test-gulp/fonts/RobotoRegular.woff2"), url("/test-gulp/fonts/RobotoRegular.woff");
+  src: url("/Di-Gi/fonts/RobotoRegular.woff2"), url("/Di-Gi/fonts/RobotoRegular.woff");
   font-display: swap; }
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("/test-gulp/fonts/RobotoCondensed-Regular.woff2"), url("/test-gulp/fonts/RobotoCondensed-Regular.woff");
+  src: url("/Di-Gi/fonts/RobotoCondensed-Regular.woff2"), url("/Di-Gi/fonts/RobotoCondensed-Regular.woff");
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("/test-gulp/fonts/Roboto-Thin.woff2"), url("/test-gulp/fonts/Roboto-Thin.woff");
+  src: url("/Di-Gi/fonts/Roboto-Thin.woff2"), url("/Di-Gi/fonts/Roboto-Thin.woff");
   font-display: swap; }
