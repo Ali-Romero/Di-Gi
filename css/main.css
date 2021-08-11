@@ -1184,15 +1184,15 @@
 
 @font-face {
   font-family: "RobotoRegular";
-  src: url("fonts/RobotoRegular.woff2"), url("fonts/RobotoRegular.woff");
+  src: url("..//fonts/RobotoRegular.woff2"), url("../fonts/RobotoRegular.woff");
   font-display: swap; }
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: url("fonts/RobotoCondensed-Regular.woff2"), url("fonts/RobotoCondensed-Regular.woff");
+  src: url("../fonts/RobotoCondensed-Regular.woff2"), url("../fonts/RobotoCondensed-Regular.woff");
   font-display: swap; }
 
 @font-face {
   font-family: "Roboto-Thin";
-  src: url("fonts/Roboto-Thin.woff2"), url("fonts/Roboto-Thin.woff");
+  src: url("../fonts/Roboto-Thin.woff2"), url("../fonts/Roboto-Thin.woff");
   font-display: swap; }
