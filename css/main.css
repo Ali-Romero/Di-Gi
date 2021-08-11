@@ -106,7 +106,7 @@
     background-color: #2B4074; }
 
 .main-slider {
-  background-image: url("/images/intro-image.jpg");
+  background-image: url("../images/intro-image.jpg");
   background-position: center;
   background-size: cover; }
   .main-slider__inner {
@@ -192,7 +192,7 @@
 
 @media (max-width: 1440px) {
   .main-slider {
-    background-image: url("/images/slider-1024.jpg"); }
+    background-image: url("../images/slider-1024.jpg"); }
     .main-slider__inner {
       padding-top: 101px; }
     .main-slider__title {
@@ -216,7 +216,7 @@
 
 @media (max-width: 1024px) {
   .main-slider {
-    background-image: url("/images/slider-770.jpg"); }
+    background-image: url("../images/slider-770.jpg"); }
     .main-slider__inner {
       padding-top: 50px; }
     .main-slider__button {
@@ -239,7 +239,7 @@
 
 @media (max-width: 770px) {
   .main-slider {
-    background-image: url("/images/slider-640.jpg"); }
+    background-image: url("../images/slider-640.jpg"); }
     .main-slider__title {
       margin-bottom: 7px; }
     .main-slider__line {
@@ -252,7 +252,7 @@
 
 @media (max-width: 640px) {
   .main-slider {
-    background-image: url("/images/slider-320.jpg"); }
+    background-image: url("../images/slider-320.jpg"); }
     .main-slider__inner {
       padding-top: 36px; }
     .main-slider__button {
