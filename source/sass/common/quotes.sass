@@ -1,5 +1,6 @@
 .quotes
   &__box
+    padding-top: 100px
     display: flex
     justify-content: center
     flex-direction: column
@@ -7,16 +8,16 @@
   &__glyph
     font-size: 34px
     line-height: 14px
-    margin-top: 100px
     font-family: "RobotoCondensed"
     color: $color-blue
     text-align: center
+    margin-bottom: 30px
 
   &__dots
     display: flex
     justify-content: center
     align-items: center
-    margin-bottom: 133px
+    margin-bottom: 103px
 
 .quotes__slider
   &-puzzle
@@ -25,7 +26,6 @@
     font-size: 36px
     line-height: 42px
     color: $color-dark
-    margin-top: 40px
     margin-bottom: 30px
     text-align: center
 
@@ -59,23 +59,45 @@
   background-color: $color-blue
   margin: 0px 10px
 
-@media (max-width: 320px)
+@media (max-width: 1024px)
   .quotes
     &__glyph
-      margin-top: 60px
+      margin-bottom: 44px
 
     &__dots
-      margin-bottom: 85px
+      margin-bottom: 136px
 
   .quotes__slider
     &-puzzle
-      max-width: 305px
+      max-width: 640px
+      font-size: 32px
+      line-height: 34px
+      margin-bottom: 45px
+
+    &-name
+      font-size: 20px
+      line-height: 23px
+      margin-bottom: 80px
+
+
+@media (max-width: 640px)
+  .quotes
+    &__box
+      padding-top: 60px
+    &__glyph
+      margin-bottom: 40px
+
+    &__dots
+      margin-bottom: 95px
+
+  .quotes__slider
+    &-puzzle
+      max-width: 260px
       font-size: 24px
       line-height: 26px
-      margin-top: 80px
       margin-bottom: 20px
 
     &-name
       font-size: 20px
       line-height: 23px
-      margin-bottom: 38px
+      margin-bottom: 40px

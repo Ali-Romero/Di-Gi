@@ -11,7 +11,7 @@ const fontName = 'icons';
 const configCss = {
   fontName: fontName,
   targetPath: '/icons.css',
-  fontPath: '/icons/'
+  fontPath: ''
 }
 
 const configFont = {

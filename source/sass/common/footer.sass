@@ -76,7 +76,28 @@
     color: $color-white
     font-family: "RobotoRegular"
 
-@media (max-width: 320px)
+@media (max-width: 1024px)
+  .footer
+    &__nav
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 125px
+
+    &__discription
+      font-size: 36px
+      line-height: 32px
+
+  .connection
+    width: 50%
+    margin-bottom: 30px
+
+@media (max-width: 770px)
+  .footer
+    &__discription
+      font-size: 24px
+      line-height: 24px
+
+@media (max-width: 640px)
   .footer
     &__inner
       display: flex
@@ -118,6 +139,7 @@
 
   .connection
     margin-bottom: 41px
+    width: 100%
 
     &:last-child
       margin: 0

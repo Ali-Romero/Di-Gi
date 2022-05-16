@@ -14,6 +14,7 @@ const assets = require('./tasks/assets')
 const assetsWatch = require('./tasks/assetsWatch')
 const js = require('./tasks/js')
 const jsWatch = require('./tasks/jsWatch')
+const deploy = require('./tasks/deploy')
 
 task('clean', clean)
 task('logger', logger)
@@ -30,6 +31,7 @@ task('assets', assets)
 task('assets:watch', assetsWatch)
 task('js', js)
 task('js:watch', jsWatch)
+task('deploy', deploy)
 
 function dev() {
   return series(
@@ -47,5 +49,7 @@ function prod() {
     parallel('sass', 'pug', 'images', 'icons', 'assets', 'js'),
   )
 }
+
+exports.deploy = series('deploy')
 
 exports.default = process.env.NODE_ENV === 'development' ? dev() : prod()

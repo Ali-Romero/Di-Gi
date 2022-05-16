@@ -1,5 +1,5 @@
 .main-slider
-  background-image: url('/images/intro-image.jpg')
+  background-image: url('../images/intro-image.jpg')
   background-repeat:no-repeat
   background-position: center
   background-size: cover
@@ -8,6 +8,7 @@
     background-color: rgba(0, 0, 0, 0.5)
     position: relative
     z-index: 2
+    padding-top: 107px
 
   &__button
     width: 200px
@@ -16,14 +17,19 @@
 
   &__title
     max-width: 500px
-    margin: 0 auto 18px
+    margin: 0 auto
+    margin-bottom: 18px
     font-size: 96px
     line-height: 96px
     text-transform: uppercase
 
+  &__line
+    display: none
+
   &__description
     max-width: 880px
-    margin: 0 auto 28px
+    margin: 0 auto
+    margin-bottom: 28px
     font-size: 24px
     line-height: 26px
 
@@ -70,44 +76,119 @@
     margin-bottom: 78px
     z-index: 2
 
+  &__dots .slick-dots
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__dots .slick-dots button
+    font-size: 0
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: $color-white
+    margin: 0px 10px
+
+  &__dots .slick-dots li.slick-active button
+    background-color: transparent
+    border: 1px solid $color-white
+
 .slick-disabled
   background-color: rgba(187, 181, 181, 0.5)
   opacity: 0.3
 
-.main-slider__dots .slick-dots
-  display: flex
-  justify-content: center
-  align-items: center
-
-.main-slider__dots .slick-dots button
-  font-size: 0
-  width: 10px
-  height: 10px
-  border-radius: 50%
-  background-color: $color-white
-  margin: 0px 10px
-
-.main-slider__dots .slick-dots li.slick-active button
-  background-color: transparent
-  border: 1px solid $color-white
-
-.dark-line
-  display: none
-
-@media (max-width: 320px)
+@media (max-width: 1440px)
   .main-slider
-    background-image: url('/images/slider-mb.jpg')
+    background-image: url('../images/slider-1024.jpg')
+
+    &__inner
+      padding-top: 101px
+
+    &__title
+      max-width: 560px
+      font-size: 84px
+      line-height: 84px
+      margin-bottom: 29px
+
+    &__description
+      padding: 0 70px
+      font-size: 18px
+      line-height: 20px
+      margin-bottom: 12px
+
+    &__button
+      margin-bottom: 202px
+
+    &__dots
+      margin-bottom: 80px
+
+  .main-slider__dots .slick-dots button
+    background-color: $color-blue
+
+  .main-slider__dots .slick-dots li.slick-active button
+    border: 1px solid $color-blue
+
+@media (max-width: 1024px)
+  .main-slider
+    background-image: url('../images/slider-770.jpg')
+
+    &__inner
+      padding-top: 50px
+
+    &__button
+      margin-bottom: 113px
+
+    &__title
+      max-width: 360px
+      font-size: 60px
+      line-height: 60px
+      margin-bottom: 25px
+
+    &__description
+      padding: 0 70px
+      font-size: 18px
+      margin-bottom: 32px
+
+    &__dots
+      margin-bottom: 51px
+
+  .main-slider__dots .slick-dots button
+    background-color: $color-blue
+
+  .main-slider__dots .slick-dots li.slick-active button
+    border: 1px solid $color-blue
+
+@media (max-width: 770px)
+  .main-slider
+    background-image: url('../images/slider-640.jpg')
+
+    &__title
+      margin-bottom: 7px
+
+    &__line
+      width: 61px
+      margin: 0 auto
+      margin-bottom: 65px
+      display: block
+
+    &__description
+      display: none
+
+@media (max-width: 640px)
+  .main-slider
+    background-image: url('../images/slider-320.jpg')
+
+    &__inner
+      padding-top: 36px
 
     &__button
       display: none
 
     &__title
       max-width: 230px
-      margin: 0 auto
-      margin-top: 36px
       font-size: 28px
       line-height: 28px
-      text-transform: uppercase
+      margin-bottom: 20px
 
     &__description
       display: none
@@ -117,12 +198,3 @@
 
     &__dots
       margin-bottom: 20px
-
-  .dark-line
-    max-width: 61px
-    height: 8px
-    background-color: $color-dark
-    margin: 0 auto
-    margin-top: 20px
-    margin-bottom: 65px
-    display: flex

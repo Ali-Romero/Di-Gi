@@ -6,9 +6,10 @@
     display: flex
     flex-direction: column
     align-items: center
+    padding-top: 80px
+    padding-bottom: 80px
 
   &__title
-    margin-top: 80px
     margin-bottom: 24px
     font-size: 48px
     line-height: 56px
@@ -18,11 +19,13 @@
   &__line
     margin: 0 auto
     width: 100px
+    margin-bottom: 80px
 
   &__work
     max-width: 1138px
-    margin: 80px auto 0
+    margin: auto 0
     display: flex
+    justify-content: center
     flex-wrap: wrap
 
 .template
@@ -41,26 +44,36 @@
     letter-spacing: 2px
     color: $color-blue
 
-@media (max-width: 320px)
+@media (max-width: 1024px)
   .portfolio
     &__bg
       display: flex
 
+    &__work
+      max-width: 582px
+      justify-content: space-between
+      align-items: center
+
+  .template
+    margin: 0
+    &__name
+      margin: 20px auto
+      font-size: 20px
+      line-height: 23px
+
+@media (max-width: 640px)
+  .portfolio
     &__title
-      margin-top: 20px
       margin-bottom: 20px
       font-size: 24px
       line-height: 28px
 
+    &__line
+      margin-bottom: 41px
+
     &__work
       max-width: 320px
-      margin: 40px auto 0
       justify-content: center
-
-  .template
-    margin: 0
-    &:last-child
-      margin-bottom: 20px
 
     &__name
       margin: 20px auto

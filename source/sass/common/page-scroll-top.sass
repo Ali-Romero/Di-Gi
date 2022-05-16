@@ -1,0 +1,46 @@
+.scroll-top
+  background-color: $color-white-light-1
+
+  &__btn
+    width: 100%
+    height: 42px
+    padding-right: 136px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+  &__container
+    display: flex
+
+  &__name
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: $color-dark
+    margin-right: 17px
+
+  &__img
+    color: $color-blue
+    font-size: 21px
+
+@media (max-width: 1024px)
+  .scroll-top
+    &__btn
+      padding-right: 14px
+
+@media (max-width: 640px)
+  .scroll-top
+    &__btn
+      height: 142px
+      padding-right: 0px
+      justify-content: center
+      padding-top: 56px
+
+    &__container
+      display: flex
+      flex-direction: column
+
+    &__name
+      margin-right: 0px
+      margin-bottom: 20px

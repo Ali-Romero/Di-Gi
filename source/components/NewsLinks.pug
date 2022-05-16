@@ -2,58 +2,58 @@
   var links = [
     {
       href: '#',
-      img: '/images/phone.png',
-      width: '270px',
-      height: '431px',
+      img: 'images/phone.png',
+      width: '270',
+      height: '431',
       subtitle: '3Д в брендинге',
     },
     {
       href: '#',
-      img: '/images/unique.png',
-      width: '270px',
-      height: '167px',
+      img: 'images/unique.png',
+      width: '270',
+      height: '167',
       subtitle: 'Уникальный дизайн',
     },
     {
       href: '#',
-      img: '/images/context.png',
-      width: '269px',
-      height: '342px',
+      img: 'images/context.png',
+      width: '269',
+      height: '342',
       subtitle: 'Контекстная реклама',
     },
     {
       href: '#',
-      img: '/images/outside.png',
-      width: '269px',
-      height: '342px',
+      img: 'images/outside.png',
+      width: '269',
+      height: '342',
       subtitle: 'Взгляд со стороны',
     },
     {
       href: '#',
-      img: '/images/graphics.png',
-      width: '269px',
-      height: '484px',
+      img: 'images/graphics.png',
+      width: '269',
+      height: '484',
       subtitle: 'Графика',
     },
     {
       href: '#',
-      img: '/images/networks.png',
-      width: '269px',
-      height: '198px',
+      img: 'images/networks.png',
+      width: '269',
+      height: '198',
       subtitle: 'Соц сети и их польза',
     },
     {
       href: '#',
-      img: '/images/culture.png',
-      width: '268px',
-      height: '211px',
+      img: 'images/culture.png',
+      width: '268',
+      height: '211',
       subtitle: 'Корпоративная культура',
     },
     {
       href: '#',
-      img: '/images/exclusivity.png',
-      width: '269px',
-      height: '437px',
+      img: 'images/exclusivity.png',
+      width: '269',
+      height: '437',
       subtitle: 'Эксклюзивность',
     },
   ]
@@ -61,7 +61,7 @@
   ul.masonry__links
     - for (var i = 0; i < links.length; i++)
       li.masonry__item
-        a(href=links[i].href).masonry__link
+        a(href=links[i].href aria-label="icon").masonry__link
           .masonry__img
             img(src=links[i].img alt=links[i].subtitle width=links[i].width height=links[i].height).masonry__img
           .masonry__subtitle

@@ -2,49 +2,49 @@
   var links = [
     {
       href: '#',
-      img: '/images/location.png',
+      img: 'images/location.png',
       name: 'Стратегия',
       description: 'Создадим уникальный и удобный дизайн.',
     },
     {
       href: '#',
-      img: '/images/analysis.png',
+      img: 'images/analysis.png',
       name: 'Анализ',
       description: 'Создадим уникальный и удобный дизайн.',
     },
     {
       href: '#',
-      img: '/images/social.png',
+      img: 'images/social.png',
       name: 'Соц сети',
       description: 'Создадим уникальный и удобный дизайн.',
     },
     {
       href: '#',
-      img: '/images/development.png',
+      img: 'images/development.png',
       name: 'Развитие',
       description: 'Создадим уникальный и удобный дизайн.',
     },
     {
       href: '#',
-      img: '/images/content.png',
+      img: 'images/content.png',
       name: 'Контент',
       description: 'Создадим уникальный и удобный дизайн.',
     },
     {
       href: '#',
-      img: '/images/design.png',
+      img: 'images/design.png',
       name: 'Дизайн ux',
       description: 'Создадим уникальный и удобный дизайн.',
     },
     {
       href: '#',
-      img: '/images/target.png',
+      img: 'images/target.png',
       name: 'Таргетированная реклама',
       description: 'Создадим уникальный и удобный дизайн.',
     },
     {
       href: '#',
-      img: '/images/product.png',
+      img: 'images/product.png',
       name: 'Продукт',
       description: 'Создадим уникальный и удобный дизайн.',
     }
@@ -53,9 +53,9 @@
 ul.services-links
   - for (var i = 0; i < links.length; i++)
     li.services-links__item
-      a(href=links[i].href).services-links__link
+      a(href=links[i].href aria-label="img").services-links__link
         .services-links__inner
-          img(src=links[i].img alt=links[i].name width="64px" height="64px").services-links__img
+          img(src=links[i].img alt=links[i].name width="64" height="64").services-links__img
           .services-links__name= links[i].name
 
         .services-links__hidden
